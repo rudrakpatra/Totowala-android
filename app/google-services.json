@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "81239839768",
+    "project_id": "totowala-9ee86",
+    "storage_bucket": "totowala-9ee86.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:81239839768:android:7b64d6f8bf36d950359f6d",
+        "android_client_info": {
+          "package_name": "com.example.totowala"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCM8CZEpSD9j09T3mEHPmfOn9dDPN4sQsQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

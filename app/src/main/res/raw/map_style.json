@@ -1,0 +1,27 @@
+[
+  {
+    "featureType": "poi",
+    "elementType": "labels",
+    "stylers": [
+      { "visibility": "simplified" },
+      { "lightness": 50 },
+      { "saturation": -100 },
+      { "gamma": 0.6 }
+    ]
+  },
+  {
+    "featureType": "poi.business",
+    "elementType": "labels",
+    "stylers": [
+      { "visibility": "off" }
+    ]
+  },
+  {
+    "featureType": "road",
+    "elementType": "geometry",
+    "stylers": [
+      { "lightness": 50 },
+      { "saturation": -100 }
+    ]
+  }
+]
