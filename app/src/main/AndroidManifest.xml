@@ -35,6 +35,9 @@
             android:exported="false">
         </activity>
         <activity
+            android:name=".AuctionsActivity"
+            android:exported="false" />
+        <activity
             android:name=".BidActivity"
             android:exported="false" />
         <activity

@@ -61,7 +61,7 @@ class OtpVerificationActivity : AppCompatActivity() {
             Toast.makeText(this, "saving User To Firebase", Toast.LENGTH_SHORT).show()
             UserManager.uploadUserToFirebase(user,
             onSuccess = {
-                startActivity(Intent(this, NearbyUsersActivity::class.java))
+                startActivity(Intent(this, AuctionsActivity::class.java))
                 finish()
             }, onFailure = {
                 Toast.makeText(this, "Error connecting to server. Try again!", Toast.LENGTH_SHORT).show()

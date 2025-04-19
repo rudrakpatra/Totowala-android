@@ -63,6 +63,7 @@ object UserManager {
     }
 
     fun logOutUser(context: Context, user: User, onSuccess: () -> Unit, onFailure: (Exception) -> Unit) {
+        removeUserFromLocalStorage(context);
         logOutUserFromFirebase(user.phone,   // Remove from Firebase
             onSuccess = {
                 Log.d("UserManager", "User Logged Out successfully")

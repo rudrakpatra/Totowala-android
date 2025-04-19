@@ -26,7 +26,7 @@ class SplashActivity : AppCompatActivity() {
                 val nextActivity = if (existingUser == null || !existingUser.loggedIn) {
                     LoginActivity::class.java
                 } else {
-                    NearbyUsersActivity::class.java
+                    AuctionsActivity::class.java
                 }
 
                 val intent = Intent(this, nextActivity)

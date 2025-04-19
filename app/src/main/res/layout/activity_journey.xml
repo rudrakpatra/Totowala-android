@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical">
@@ -12,10 +13,13 @@
         android:layout_height="0dp"
         android:layout_weight="1" />
 
-    <!-- Autocomplete Fragments inside CardViews for better UI -->
+    <!-- Autocomplete Fragment for "From" -->
     <androidx.cardview.widget.CardView
         android:layout_width="match_parent"
-        android:layout_height="wrap_content">
+        android:layout_height="wrap_content"
+        android:layout_margin="8dp"
+        card_view:cardCornerRadius="8dp"
+        card_view:cardElevation="4dp">
 
         <fragment
             android:id="@+id/autocomplete_fragment_from"
@@ -24,9 +28,13 @@
             android:layout_height="wrap_content" />
     </androidx.cardview.widget.CardView>
 
+    <!-- Autocomplete Fragment for "To" -->
     <androidx.cardview.widget.CardView
         android:layout_width="match_parent"
-        android:layout_height="wrap_content">
+        android:layout_height="wrap_content"
+        android:layout_margin="8dp"
+        card_view:cardCornerRadius="8dp"
+        card_view:cardElevation="4dp">
 
         <fragment
             android:id="@+id/autocomplete_fragment_to"
@@ -34,4 +42,50 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content" />
     </androidx.cardview.widget.CardView>
+
+    <!-- Driver Info Section -->
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="8dp"
+        card_view:cardCornerRadius="8dp"
+        card_view:cardElevation="4dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="16dp">
+
+            <TextView
+                android:id="@+id/driver_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Driver: "
+                android:textStyle="bold"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/driver_vehicle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Vehicle: "
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/driver_phone"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Phone: "
+                android:textSize="16sp" />
+
+            <Button
+                android:id="@+id/call_driver_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Call Driver"
+                android:layout_marginTop="8dp" />
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
 </LinearLayout>
